@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formular</title>
+</head>
+
+<body>
+    <h1>TV dotazník</h1>
+    <form action="" method="post">
+        <div class="parts">
+            <label for="jmeno">Jméno a přijímení</label>
+            <div class="answers">
+                <input type="text" id="jmeno" name="jmeno">
+            </div>
+        </div>
+        <div class="parts">
+            <p>Kolik vám je let?</p>
+            <div class="answers">
+                <input type="radio" id="vek-18" name="vek" value="18">
+                <label for="vek-18">18 a méně</label><br>
+                <input type="radio" id="vek-19" name="vek" value="19">
+                <label for="vek-19">19 až 64</label><br>
+                <input type="radio" id="vek-65" name="vek" value="65">
+                <label for="vek-65">65 a více</label><br>
+            </div>
+        </div>
+        <div class="parts">
+            <p>V jakých zařízení sledujete ČT?</p>
+            <div class="answers">
+                <input type="checkbox" id="tv-televize" name="tv[]" value="Televize">
+                <label for="tv-televize">Televize</label><br>
+                <input type="checkbox" id="tv-pocitac" name="tv[]" value="Počítač">
+                <label for="tv-pocitac">Počítač</label><br>
+                <input type="checkbox" id="tv-mobil" name="tv[]" value="Mobil">
+                <label for="tv-mobil">Mobil</label><br>
+            </div>
+        </div>
+        <div class="parts">
+            <p>Co se vám líbí na TV?</p>
+            <div class="answers">
+                <textarea id="libi" name="libi" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <div class="parts">
+            <p>Jakou výši poplatků jste ochotni platit?</p>
+            <div class="answers">
+                <input type="text" value="1000">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Odeslat">
+        </div>
+    </form>
+</body>
+</html>
